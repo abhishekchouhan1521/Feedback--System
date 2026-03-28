@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Feedback System</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="main-heading">Feedback System</h1>
+            <div class="ratings">
+                <h2 id="ratings-heading">Overall Ratings</h2>
+                <div id="info-ratings">
+                    <p>*<span id="r1">0</span></p>
+                    <p>**<span id="r2">0</span></p>
+                    <p>***<span id="r3">0</span></p>
+                    <p>****<span id="r4">0</span></p>
+                    <p>*****<span id="r5">0</span></p>
+                </div>
+            </div>
+            <div class="form">
+                <h2 id="form-heading">Feedback Form</h2>
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name">
+                <label for="rating">Choose Rating:</label>
+                <select id="rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <button id="submitBtn" onclick="submitFeedback()">Submit</button>            
+            </div>
+            <div class="list">
+                <h2>All Feedbacks</h2>
+                <div id="feedbackList"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
